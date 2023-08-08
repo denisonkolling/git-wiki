@@ -10,8 +10,6 @@ cursor: pointer;
 font-size: 18px;
 
 &:hover {
-  opacity: 0.6;
   background-color: #FAFAFA40;
-  scale: 1.1;
 }
 `
