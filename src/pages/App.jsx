@@ -20,8 +20,14 @@ function App() {
 				return;
 			}
 		} catch (error) {
-			alert(error);
+
+			alert('Repositório não encontrado! ' + error);
 		}
+	}
+
+	const handleRemove = (id) => {
+		const removeRepo = repos.filter(repo => repo.id !== id);
+		setRepos(removeRepo)
 	}
 
 	return (
@@ -33,7 +39,7 @@ function App() {
 			/>
 			<Button onClick={handleSearchRepo} />
 			{repos.map((repo) => (
-				<ItemRepo key={repo.id} repo={repo} />
+				<ItemRepo key={repo.id} repo={repo} handleRemove={handleRemove} />
 			))}
 		</Container>
 	);

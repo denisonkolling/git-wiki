@@ -15,14 +15,26 @@ p {
   margin-bottom: 20px;
 }
 
-a.remover {
-  color: purple;
+a {
+  color: #BDC3C7;
   margin-top: 20px;
+  text-decoration: none;
+}
+
+a.remover {
+  color: #A569BD;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
 hr {
   color: #FAFAFA60;
   margin: 20px 0;
 }
+`
 
+export const RemoveButton = styled.button`
+  border: 0;
+  cursor: pointer;
+  color: #AEB6BF; 
 `
